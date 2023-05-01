@@ -1,0 +1,84 @@
+<html>
+<head>
+<title> Apple & Samsung Accesories </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="black">
+<center><img src="Images/apple-logo.jpg" width="250px" height="150px">
+<h1> Apple Accessories </h1></center>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'cover')">Phone Covers</button>
+  <button class="tablinks" onclick="openCity(event, 'charger')">Phone Charger</button>
+  <button class="tablinks" onclick="openCity(event, 'others')">Other Accessories</button>
+</div>
+
+<div id="cover" class="tabcontent">
+  <h3>Phone Covers</h3>
+  <img src="Images/1.jpg" width="100px" height="100px">
+  <img src="Images/2.jpg" width="100px" height="100px">
+  <img src="Images/3.jpg" width="100px" height="100px">
+  <img src="Images/4.jpg" width="100px" height="100px">
+  <img src="Images/5.jpg" width="100px" height="100px">
+  <img src="Images/6.jpg" width="100px" height="100px">
+  <img src="Images/7.jpg" width="100px" height="100px">
+  <img src="Images/8.jpg" width="100px" height="100px">
+  <img src="Images/9.jpg" width="100px" height="100px">
+  <img src="Images/10.jpg" width="100px" height="100px">
+  <img src="Images/11.jpg" width="100px" height="100px">
+  <img src="Images/12.jpg" width="100px" height="100px">
+  <img src="Images/13.jpg" width="100px" height="100px">
+  <img src="Images/14.jpg" width="100px" height="100px">
+  <br>
+  <center><button type="submit"> Purchase Now </button></center>
+</div>
+<div id="charger" class="tabcontent">
+  <h3>Phone Charger</h3>
+  <img src="Images/15.jpg" width="100px" height="100px">
+  <img src="Images/16.jpg" width="100px" height="100px">
+  <img src="Images/17.jpg" width="100px" height="100px">
+  <img src="Images/18.jpg" width="100px" height="100px">
+  <img src="Images/19.jpg" width="100px" height="100px">
+  <img src="Images/20.jpg" width="100px" height="100px">
+  <img src="Images/21.jpg" width="100px" height="100px">
+  <img src="Images/22.jpg" width="100px" height="100px">
+  <img src="Images/23.jpg" width="100px" height="100px">
+  <br>
+  <center><button type="submit"> Purchase Now </button></center>
+</div>
+<div id="others" class="tabcontent">
+  <h3>Other Accessories</h3>
+  <img src="Images/24.jpg" width="100px" height="100px">
+  <img src="Images/25.jpg" width="100px" height="100px">
+  <img src="Images/26.jpg" width="100px" height="100px">
+  <img src="Images/27.jpg" width="100px" height="100px">
+  <img src="Images/28.jpg" width="100px" height="100px">
+  <img src="Images/29.jpg" width="100px" height="100px">
+  <img src="Images/30.jpg" width="100px" height="100px">
+  <img src="Images/31.jpg" width="100px" height="100px">
+  <img src="Images/32.jpg" width="100px" height="100px">
+  <img src="Images/33.jpg" width="100px" height="100px">
+  <img src="Images/34.jpg" width="100px" height="100px">
+  <img src="Images/35.jpg" width="100px" height="100px">
+  <img src="Images/36.jpg" width="100px" height="100px">
+  <br>
+  <center><button type="submit"> Purchase Now </button></center>
+</div>
+<hr>
+<center><button onclick="window.location.href='sam.html';"> Switch to Samsung Page </button>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>

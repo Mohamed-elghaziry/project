@@ -1,0 +1,68 @@
+<html>
+<head>
+<title> Apple & Samsung Accesories </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="black">
+<center><img src="Images/sam-logo.jpg" width="250px" height="150px">
+<h1> Samsung Accessories </h1></center>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'cover')">Phone Covers</button>
+  <button class="tablinks" onclick="openCity(event, 'charger')">Phone Charger</button>
+  <button class="tablinks" onclick="openCity(event, 'others')">Other Accessories</button>
+</div>
+
+<div id="cover" class="tabcontent">
+  <h3>Phone Covers</h3>
+  <img src="Images/37.jpg" width="100px" height="100px">
+  <img src="Images/38.jpg" width="100px" height="100px">
+  <img src="Images/39.jpg" width="100px" height="100px">
+  <img src="Images/40.jpg" width="100px" height="100px">
+  <img src="Images/49.jpg" width="100px" height="100px">
+  <img src="Images/50.jpg" width="100px" height="100px">
+  <img src="Images/51.jpg" width="100px" height="100px">
+  <img src="Images/52.jpg" width="100px" height="100px">
+  <br>
+  <center><button type="submit"> Purchase Now </button></center>
+</div>
+<div id="charger" class="tabcontent">
+  <h3>Phone Charger</h3>
+  <img src="Images/47.jpg" width="100px" height="100px">
+  <br>
+  <center><button type="submit"> Purchase Now </button></center>
+</div>
+<div id="others" class="tabcontent">
+  <h3>Other Accessories</h3>
+  <img src="Images/41.jpg" width="100px" height="100px">
+  <img src="Images/42.jpg" width="100px" height="100px">
+  <img src="Images/43.jpg" width="100px" height="100px">
+  <img src="Images/44.jpg" width="100px" height="100px">
+  <img src="Images/45.jpg" width="100px" height="100px">
+  <img src="Images/46.jpg" width="100px" height="100px">
+  <img src="Images/48.jpg" width="100px" height="100px">
+  <img src="Images/53.jpg" width="100px" height="100px">
+  <img src="Images/54.jpg" width="100px" height="100px">
+  <img src="Images/55.jpg" width="100px" height="100px">
+  <img src="Images/56.jpg" width="100px" height="100px">
+  <br>
+  <center><button type="submit"> Purchase Now </button></center>
+</div>
+<hr>
+<center><button onclick="window.location.href='home.html';"> Switch to Apple Page </button>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
